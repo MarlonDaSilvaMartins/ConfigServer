@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/MarlonDaSilvaMartins/ConfigServerRepo.git
+        bootstrap: true
+server:
+  port: 8888
+  servlet:
+    context-path: /config-server
