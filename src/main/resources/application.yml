@@ -3,10 +3,10 @@ spring:
     name: config-server
   cloud:
     config:
+      enabled: true
       server:
         git:
-          uri: https://github.com/MarlonDaSilvaMartins/ConfigServerRepo.git
-        bootstrap: true
+          uri: https://github.com/MarlonDaSilvaMartins/ConfigServerRepo
 server:
   port: 8888
   servlet:
