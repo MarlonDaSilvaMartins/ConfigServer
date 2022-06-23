@@ -7,6 +7,15 @@ spring:
       server:
         git:
           uri: https://github.com/MarlonDaSilvaMartins/ConfigServerRepo
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: Track
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: myGroup
 server:
   port: 8888
   servlet:
